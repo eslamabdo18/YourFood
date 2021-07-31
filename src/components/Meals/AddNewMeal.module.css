@@ -1,0 +1,77 @@
+.space {
+  margin-bottom: 15rem;
+}
+section .action-form {
+  margin: -2.5rem auto;
+  text-align: center;
+  overflow: hidden;
+  z-index:-9999;
+  clear: both;
+  
+}
+.hide {
+  max-height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.action-form input {
+  display: block;
+  margin: 1.5rem auto;
+  min-width: 30rem;
+  min-height: 3rem;
+  border-radius: 5px;
+}
+
+.action-form button {
+  padding: 20px;
+  cursor: pointer;
+  background: #8a2b06;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.action-form button:hover {
+  background-color: #5a1a01;
+}
+.toggle{
+    padding: 20px;
+    position: relative;
+    margin: 20px auto;
+    color:rgb(47, 47, 47);
+    cursor: pointer;
+    background:white;
+    border-radius: 14px;
+    border-bottom: 2px solid #5a1a013f;
+    z-index: 9999;
+    clear: both;
+}
+.toggle img {
+  float: right;
+}
+.bump {
+  animation: bump 0.5s ease-out;
+  overflow: hidden;
+  animation-fill-mode: forwards;
+}
+.bump_show {
+  animation: bump2 0.5s ease-out;
+  overflow: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bump {
+ from{
+   max-height: 500px;
+ }
+ to{
+  max-height: 0;
+ }
+}
+@keyframes bump2 {
+  from{
+    max-height: 0;
+  }
+  to{
+   max-height: 500px;
+  }
+ }
